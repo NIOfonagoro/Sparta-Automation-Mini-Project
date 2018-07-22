@@ -11,4 +11,8 @@ class Amazon_Site
     Amazon_Registration.new
   end
 
+  def amazon_gift_card
+    Amazon_Gift_Card.new
+  end
+
 end

@@ -21,4 +21,26 @@ class Amazon_Registration
     find("#continue").click
   end
 
+  def error_message
+    one = find("#auth-customerName-missing-alert").text
+    two = find("#auth-email-missing-alert").text
+    three = find("#auth-password-missing-alert").text
+    four = find("#auth-passwordCheck-missing-alert").text
+
+
+    case message  # was case obj.class
+    when one == error
+      one
+    when two == error
+      two
+    when three == error
+      three
+    when four == error
+      four
+    else
+      null
+    end
+
+  end
+
 end

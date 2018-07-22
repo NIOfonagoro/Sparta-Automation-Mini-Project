@@ -7,7 +7,7 @@ Feature: Disney Registration.
 
     Examples:
     | name | email | password | retype_password | error |
-    |  | abc@def.com | testing123 | testing123 |  |
-    | nick |  | testing123 | testing123 |  |
-    | nick | abc@def.com  |  | testing123 |  |
-    | nick | abc@def.com  | testing123 |  |  |
+    |  | abc@def.com | testing123 | testing123 | Enter your name |
+    | nick |  | testing123 | testing123 | Enter your e-mail |
+    | nick | abc@def.com  |  | testing123 | Enter your password |
+    | nick | abc@def.com  | testing123 |  | Type your password again |

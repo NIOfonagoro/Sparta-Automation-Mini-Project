@@ -1,6 +1,4 @@
 Given("I access the amazon homepage and then registration page") do
-  @amazon_site = Amazon_Site.new
-  @amazon_site.amazon_homepage.visit_homepage
   @amazon_site.amazon_homepage.click_sign_in_link
   @amazon_site.amazon_homepage.click_sign_up_link
 end
@@ -16,5 +14,5 @@ When(/^filling in details and a section if left blank (.*) (.*) (.*) (.*)$/) do 
 end
 
 Then(/^It should show the correct error meesage (.*)$/) do |error|
-  pending # Write code here that turns the phrase above into concrete actions
+ pending # expect(@amazon_site.amazon_registration.error_message).to be eq "#{error}"
 end
